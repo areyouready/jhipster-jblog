@@ -42,6 +42,7 @@ public class CacheConfiguration {
             cm.createCache(de.fnortheim.jblog.domain.User.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.jblog.domain.Authority.class.getName(), jcacheConfiguration);
             cm.createCache(de.fnortheim.jblog.domain.User.class.getName() + ".authorities", jcacheConfiguration);
+            cm.createCache(de.fnortheim.jblog.domain.Post.class.getName(), jcacheConfiguration);
             // jhipster-needle-ehcache-add-entry
         };
     }
